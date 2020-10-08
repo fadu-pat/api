@@ -48,6 +48,7 @@ public class EquipApiController {
 	@RequestMapping(value = "/api/svlt", method = RequestMethod.POST)
 	@ResponseBody
 	public String equipApiInsert(@RequestBody EquipApiVO equipApiVO, HttpServletResponse res) throws Exception {
+		LOGGER.debug("asd");
 		try {
 			equipApiService.insertEquipApi(equipApiVO);
 		} catch (Exception e) {
